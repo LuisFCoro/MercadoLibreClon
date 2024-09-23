@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="home.html" method="post">
+
+        <!--Nombre y Apellido-->
+        <label for="nombre">Nombre y Apellido:</label>
+        <input type="text" id="nombre" name="nombre" required><br><br>
+
+        <!--Nombre de Usuario-->
+        <label for="usuario">Nombre de Usuario</label>
+        <input type="text" id="usuario" name="usuario" required><br><br>
+
+
+        <!--Email-->
+        <label for="email">Email</label>
+        <input type="text" id="email" name="email" required><br><br>
+
+        <!--Fecha de nacimiento-->
+        <label for="fecha_nacimiento">Fecha de Nacimiento</label> 
+        <input type="text" id="fecha_nacimiento" name="fecha_nacimiento" required><br><br>
+
+        <!--Domicilio-->
+        <label for="domicilio">Domicilio</label>
+        <input type="text" id="domicilio" name="domicilio" required><br><br>
+
+        <!--Perfil de usuario-->
+        <label>Perfil de usuario</label><br>
+        <input type="radio" id="comprar" name="perfil" value="comprar" required>
+        <label for="comprar">Comprar</label><br>
+        <input type="radio" id="vender" name="perfil" value="vender" required>
+        <label for="vender">Vender</label><br><br>
+
+        <!--Categorias de interes-->
+        <label>Categorias de Interes</label><br>
+        <input type="checkbox" id="electro" name="interes" value="electro">
+        <label for="electro">Electro</label><br>
+        <input type="checkbox" id="moda" name="interes" value="moda">
+        <label for="moda">Moda</label><br>
+        <input type="checkbox" id="hogar" name="interes" value="hogar">
+        <label for="hogar">Hogar</label><br>
+        <input type="checkbox" id="juegueteria" name="interes" value="jugueteria">
+        <label for="juegueteria">Jugueteria</label><br>
+        <input type="checkbox" id="vida_sana" name="interes" value="vida_sana">
+        <label for="vida_sana">Vida Sana</label><br><br>
+
+        <!--Foto de usuario-->
+        <label for="foto">Foto de usuario</label>
+        <input type="file" id="foto" name="foto" accept="image/*" required><br><br>
+
+        <!--Contraseña-->
+        <label for="contraseña">Contraseña</label>
+        <input type="password" id="contrseña" name="contraseña" required><br><br>
+
+        <!--Confirmar contraseña-->
+        <label for="confirmar_contraseña">Confirmar Contraseña</label>
+        <input type="password" id="confirmar_contraseña" name="confirmar_contraseña" required><br><br>
+
+        <!--Boton de enviar-->
+        <button type="submit">Enviar</button>
+
+        <!--Botón de borrar-->
+        <button type="reset">Borrar</button>
+    </form>
+</body>
+</html>
