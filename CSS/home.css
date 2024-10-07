@@ -67,89 +67,8 @@
     margin-bottom: 1rem;
 }
 
-.home-page .main_banner {
-    display: block;
-    margin: 20px auto;
-    width: 100%;
-    height: auto;
-    margin: 0; /* Elimina márgenes aquí también */
-}
 
-/* Estilos para las imágenes dentro de los artículos */
-.home-page article {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 20px;
-    text-align: center;
-}
 
-.home-page article img {
-    margin: 20px 0;
-    max-width: 100%;
-    height: auto;
-}
-
-.home-page .precio {
-    font-size: 18px;
-}
-
-.home-page .descuento {
-    font-size: 16px;
-    color: green;
-}
-
-.home-page .articule_name {
-    font-size: 16px;
-    color: #666;
-}
-
-.home-page .producto {
-    background-color: rgb(255, 255, 255);
-    padding: 10px;
-    border-radius: 5px;
-    margin: 15px 0;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-.home-page .inf_producto {
-    text-align: left;
-    height: 100%;
-}
-
-.home-page .inf_producto p, .inf_producto span {
-    display: block;
-    margin: 0.1rem;
-}
-
-.home-page .inf_producto p {
-    margin-bottom: 5px;
-    margin-top: 1.5rem;
-}
-
-.home-page .inf_producto h4 {
-    font-size: 18px;
-    margin-top: 1rem;
-}
-
-.home-page .icono-envio {
-    display: inline-block;
-    width: 40px;
-    height: 40px;
-    border: 2px solid #28a745;
-    border-radius: 50%;
-    margin-right: 10px;
-    vertical-align: middle;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: transparent;
-}
-
-.home-page .icono-envio i {
-    font-size: 20px;
-    color: #28a745;
-}
 
 /* Footer */
 .home-page footer {
