@@ -1,4 +1,4 @@
-/* Estilos generales */
+
 .home-page body {
     margin: 0;
 }
@@ -50,11 +50,11 @@
     margin-bottom: 1.6rem;
     color: white;
     border-radius: 0.5rem;
-    display: none; /* Oculto por defecto */
+    display: none; 
     width: 1.38rem;
 }
 
-/* Estilos de los links de navegación */
+
 .home-page .navbar a {
     color: black;
     text-decoration: none;
@@ -74,16 +74,16 @@
     margin-bottom: 1rem;
 }
 
-/* Media queries para pantallas pequeñas (móviles) */
+
 @media (max-width: 768px) {
-    /* Ocultar la barra de navegación */
+  
     .home-page .navbar {
-        display: none; /* Oculta el menú de navegación en pantallas pequeñas */
+        display: none; 
     }
 
-    /* Mostrar el icono de hamburguesa */
+  
     .home-page .burger_menu i {
-        display: block; /* Muestra el icono en pantallas pequeñas */
+        display: block; 
     }
 }
 
@@ -225,7 +225,7 @@
     text-align: center;
 }
 
-/* Ajustes para dispositivos móviles */
+
 @media (max-width: 768px) {
     .home-page footer {
         flex-direction: column;
