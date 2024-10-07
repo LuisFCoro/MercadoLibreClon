@@ -1,0 +1,231 @@
+.register-page body {
+    margin: 0; 
+}
+
+.register-page * {
+    font-family: 'Roboto', sans-serif;
+    margin: 0; 
+}
+
+
+.register-page header {
+    background-color: #eac926;
+}
+
+.register-page .logo_header {
+    width: 150px;
+    height: 150px;
+    padding: 10px;
+    margin-left: 21px;
+    margin-top: -40px;
+    margin-bottom: -40px;
+}
+
+.register-page form input[type="search"] {
+    width: 15rem;
+    margin-left: 21px;
+}
+
+.register-page form button {
+    margin-left: 21px;
+}
+
+.register-page .header_titulo {
+    text-align: center;
+    font-size: 0.69rem;
+    margin-left: 0.5rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.register-page .burger_menu i {
+    font-size: 24px;
+    background-color: #1259c3;
+    margin-left: 8rem;
+    margin-top: 2.5rem;
+    padding: 0.9rem;
+    margin-bottom: 1.6rem;
+    color: white;
+    border-radius: 0.5rem;
+}
+
+.register-page .navbar a {
+    color: black;
+    text-decoration: none;
+    margin: -40px;
+    font-size: 1rem;
+}
+
+.register-page .navbar ul {
+    list-style: none;
+    margin-left: 0.1rem;
+}
+
+.register-page .titulos {
+    font-size: 24px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+
+
+
+
+
+.register-page main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 170vh;
+}
+
+
+.register-page .form-centro {
+    display: flex;
+    flex-direction: column; /* Coloca los elementos en columna */
+    align-items: stretch;
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 700px; /* Ajusta el ancho máximo para pantallas grandes */
+    margin: 0 10px;
+    box-sizing: border-box;
+    transition: all 0.3s ease; /* Transición suave cuando cambie de tamaño */
+}
+
+
+.register-page .form-centro label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+
+.register-page .form-centro input[type="text"],
+.register-page .form-centro input[type="password"],
+.register-page .form-centro input[type="email"],
+.register-page .form-centro input[type="file"],
+.register-page .form-centro input[type="date"] {
+    width: 100%; /* Ancho completo */
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+
+.register-page .form-centro input[type="radio"],
+.register-page .form-centro input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+.register-page .form-centro input[type="radio"] + label,
+.register-page .form-centro input[type="checkbox"] + label {
+    margin-right: 10px;
+    font-weight: normal;
+}
+
+
+.register-page .form-centro button {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    background-color: #3483fa;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-left: 0rem;
+}
+
+.register-page .form-centro button:hover {
+    background-color: #2968c8;
+}
+
+
+@media (max-width: 1200px) {
+    .register-page .form-centro {
+        max-width: 600px; 
+    }
+}
+
+@media (max-width: 768px) {
+    .register-page .form-centro {
+        max-width: 100%; 
+        padding: 15px;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .register-page .form-centro {
+        max-width: 90%; 
+        padding: 10px;
+    }
+}
+
+
+
+
+
+/* Footer */
+.register-page footer {
+    background-color: white !important;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.register-page .footer-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    width: 250px;
+}
+
+.register-page .footer-item i {
+    font-size: 40px;
+    color: #1259c3;
+    margin-bottom: 10px;
+}
+
+.register-page .footer-item h2 {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.register-page .footer-item p {
+    font-size: 14px;
+    margin: 5px 0;
+    text-align: center;
+}
+
+.register-page .footer-item:last-child {
+    width: 100%;
+    text-align: center;
+}
+
+/* Ajustes para dispositivos móviles */
+@media (max-width: 768px) {
+    .register-page footer {
+        flex-direction: column;
+        text-align: left;
+    }
+}
+
+.register-page main {
+    background-color: #ebebeb;
+}
+
+*{
+    margin: 0rem;
+}
