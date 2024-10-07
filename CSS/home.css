@@ -1,25 +1,27 @@
+/* Estilos generales */
 .home-page body {
-    margin: 0; /* Asegúrate de que el body tenga un margen de 0 */
+    margin: 0;
 }
 
 .home-page * {
     font-family: 'Roboto', sans-serif;
-    margin: 0; /* Asegúrate de que todos los elementos tengan un margen de 0 */
+    margin: 0;
 }
 
-/* Los demás estilos permanecen iguales */
+
 .home-page header {
     background-color: #eac926;
 }
 
 .home-page .logo_header {
     width: 150px;
-    height: 150px;
+    height: 160px;
     padding: 10px;
     margin-left: 21px;
     margin-top: -40px;
     margin-bottom: -40px;
 }
+
 
 .home-page form input[type="search"] {
     width: 15rem;
@@ -38,6 +40,7 @@
     margin-bottom: 1rem;
 }
 
+
 .home-page .burger_menu i {
     font-size: 24px;
     background-color: #1259c3;
@@ -47,8 +50,11 @@
     margin-bottom: 1.6rem;
     color: white;
     border-radius: 0.5rem;
+    display: none; /* Oculto por defecto */
+    width: 1.38rem;
 }
 
+/* Estilos de los links de navegación */
 .home-page .navbar a {
     color: black;
     text-decoration: none;
@@ -61,11 +67,27 @@
     margin-left: 0.1rem;
 }
 
+/* Estilos de los títulos */
 .home-page .titulos {
     font-size: 24px;
     margin-top: 1rem;
     margin-bottom: 1rem;
 }
+
+/* Media queries para pantallas pequeñas (móviles) */
+@media (max-width: 768px) {
+    /* Ocultar la barra de navegación */
+    .home-page .navbar {
+        display: none; /* Oculta el menú de navegación en pantallas pequeñas */
+    }
+
+    /* Mostrar el icono de hamburguesa */
+    .home-page .burger_menu i {
+        display: block; /* Muestra el icono en pantallas pequeñas */
+    }
+}
+
+
 
 .home-page .main_banner {
     display: block;
@@ -75,6 +97,9 @@
     margin: 0; /* Elimina márgenes aquí también */
 }
 
+
+
+
 /* Estilos para las imágenes dentro de los artículos */
 .home-page article {
     display: flex;
@@ -82,10 +107,11 @@
     align-items: center;
     margin: 20px;
     text-align: center;
+    margin-top: 10px;
 }
 
 .home-page article img {
-    margin: 20px 0;
+    margin: 15px 0;
     max-width: 100%;
     height: auto;
 }
@@ -149,6 +175,13 @@
 .home-page .icono-envio i {
     font-size: 20px;
     color: #28a745;
+
+
+
+
+
+
+
 }
 
 /* Footer */
@@ -207,3 +240,4 @@
 *{
     margin: 0rem;
 }
+
