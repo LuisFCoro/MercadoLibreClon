@@ -1,3 +1,12 @@
+/* Body */
+html, body {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden; 
+    background-color: #ebebeb;
+}
+
+/* Header */
 .login-page header {
     height: 130px;
     margin: 0;
@@ -59,9 +68,7 @@
     display: flex;
     justify-content: center;
     width: 100%;
-    flex-wrap: nowrap;
-    position: relative;
-    margin-left: -15rem;
+    margin:0;
 }
 
 .login-page nav ul {
@@ -70,7 +77,6 @@
     list-style-type: none;
     padding: 0;
     margin: 0;
-    flex-wrap: nowrap;
     gap: 15px;
     
 }
@@ -80,7 +86,6 @@
     color: #333;
     padding: 5px 10px;
     display: block;
-    white-space: nowrap;
     margin-top: 2rem;
 }
 
@@ -91,6 +96,8 @@
 .login-page .help-item {
     margin-right: 300px;
 }
+
+/* Main */
 
 .login-page html, .login-page body {
     margin: 0;
@@ -128,7 +135,7 @@
 }
 
 .login-page .form-especial input {
-    width: px; /* Parece que falta un valor aquí, ajusta según necesites */
+    width: px; 
     padding: 20px;
     margin: 30px 0;
     font-size: 1.2em;
@@ -146,6 +153,8 @@
     border-radius: 5px;
     cursor: pointer;
 }
+
+/* Footer */
 
 .login-page .form-especial button:hover {
     background-color: #555;
@@ -189,16 +198,5 @@
 .login-page .footer-item:last-child {
     width: 100%;
     text-align: center;
-}
-
-body{
-    background-color: #ebebeb;
-}
-
-@media (max-width: 768px) {
-    .login-page footer {
-        flex-direction: column;
-        text-align: left;
-    }
 }
 

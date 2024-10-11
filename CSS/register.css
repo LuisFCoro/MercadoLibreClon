@@ -1,3 +1,4 @@
+/* Body */
 .register-page body {
     margin: 0; 
 }
@@ -7,6 +8,7 @@
     margin: 0; 
 }
 
+/* Header */
 
 .register-page header {
     background-color: #eac926;
@@ -68,9 +70,7 @@
 }
 
 
-
-
-
+/* Main */
 
 .register-page main {
     display: flex;
@@ -95,13 +95,11 @@
     transition: all 0.3s ease; /* Transición suave cuando cambie de tamaño */
 }
 
-
 .register-page .form-centro label {
     margin-bottom: 5px;
     font-weight: bold;
     font-size: 14px;
 }
-
 
 .register-page .form-centro input[type="text"],
 .register-page .form-centro input[type="password"],
@@ -117,7 +115,6 @@
     font-size: 14px;
 }
 
-
 .register-page .form-centro input[type="radio"],
 .register-page .form-centro input[type="checkbox"] {
     margin-right: 5px;
@@ -128,7 +125,6 @@
     margin-right: 10px;
     font-weight: normal;
 }
-
 
 .register-page .form-centro button {
     width: 100%;
@@ -147,33 +143,8 @@
     background-color: #2968c8;
 }
 
-
-@media (max-width: 1200px) {
-    .register-page .form-centro {
-        max-width: 600px; 
-    }
-}
-
-@media (max-width: 768px) {
-    .register-page .form-centro {
-        max-width: 100%; 
-        padding: 15px;
-    }
-}
-
-
-@media (max-width: 480px) {
-    .register-page .form-centro {
-        max-width: 90%; 
-        padding: 10px;
-    }
-}
-
-
-
-
-
 /* Footer */
+
 .register-page footer {
     background-color: white !important;
     padding: 20px;
@@ -214,18 +185,3 @@
     text-align: center;
 }
 
-/* Ajustes para dispositivos móviles */
-@media (max-width: 768px) {
-    .register-page footer {
-        flex-direction: column;
-        text-align: left;
-    }
-}
-
-.register-page main {
-    background-color: #ebebeb;
-}
-
-*{
-    margin: 0rem;
-}

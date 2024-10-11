@@ -1,13 +1,14 @@
-.home-page body {
-    margin: 0; /* Asegúrate de que el body tenga un margen de 0 */
-}
+/* Body  */
 
+.home-page body {
+    margin: 0; 
+}
 .home-page * {
     font-family: 'Roboto', sans-serif;
-    margin: 0; /* Asegúrate de que todos los elementos tengan un margen de 0 */
+    margin: 0; 
 }
 
-/* Los demás estilos permanecen iguales */
+/* Header */
 .home-page header {
     background-color: #eac926;
 }
@@ -61,23 +62,16 @@
     margin-left: 0.1rem;
 }
 
-.home-page .titulos {
-    font-size: 24px;
-    margin-top: 1rem;
+.home-page .help-item {
     margin-bottom: 1rem;
 }
-
-
-
 
 /* Footer */
 .home-page footer {
     background-color: white !important;
     padding: 20px;
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
     text-align: center;
+    margin: 0.25rem;
 }
 
 .home-page .footer-item {
@@ -90,7 +84,7 @@
 }
 
 .home-page .footer-item i {
-    font-size: 40px;
+    font-size: 2rem;
     color: #1259c3;
     margin-bottom: 10px;
 }
@@ -109,20 +103,4 @@
 .home-page .footer-item:last-child {
     width: 100%;
     text-align: center;
-}
-
-/* Ajustes para dispositivos móviles */
-@media (max-width: 768px) {
-    .home-page footer {
-        flex-direction: column;
-        text-align: left;
-    }
-}
-
-.home-page main {
-    background-color: #ebebeb;
-}
-
-*{
-    margin: 0rem;
 }
