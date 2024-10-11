@@ -1,3 +1,4 @@
+/* Body */
 
 .home-page body {
     margin: 0;
@@ -8,9 +9,11 @@
     margin: 0;
 }
 
+/* Header */
 
 .home-page header {
     background-color: #eac926;
+    height: 18rem;
 }
 
 .home-page .logo_header {
@@ -21,7 +24,6 @@
     margin-top: -40px;
     margin-bottom: -40px;
 }
-
 
 .home-page form input[type="search"] {
     width: 15rem;
@@ -40,20 +42,17 @@
     margin-bottom: 1rem;
 }
 
-
 .home-page .burger_menu i {
     font-size: 24px;
-    background-color: #1259c3;
+    background-color: #2365c9;
     margin-left: 8rem;
     margin-top: 2.5rem;
     padding: 0.9rem;
-    margin-bottom: 1.6rem;
     color: white;
     border-radius: 0.5rem;
-    display: none; 
+    display: none;
     width: 1.38rem;
 }
-
 
 .home-page .navbar a {
     color: black;
@@ -67,47 +66,27 @@
     margin-left: 0.1rem;
 }
 
-/* Estilos de los títulos */
 .home-page .titulos {
     font-size: 24px;
     margin-top: 1rem;
     margin-bottom: 1rem;
+    color:#666;
 }
 
-
-@media (max-width: 768px) {
-  
-    .home-page .navbar {
-        display: none; 
-    }
-
-  
-    .home-page .burger_menu i {
-        display: block; 
-    }
-}
-
-
-
+/* Main */
 .home-page .main_banner {
     display: block;
-    margin: 20px auto;
-    width: 100%;
+    margin: 20px auto; 
+    width: 90%; 
     height: auto;
-    margin: 0; /* Elimina márgenes aquí también */
 }
 
-
-
-
-/* Estilos para las imágenes dentro de los artículos */
 .home-page article {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 20px;
+    margin: 10px;
     text-align: center;
-    margin-top: 10px;
 }
 
 .home-page article img {
@@ -132,10 +111,15 @@
 
 .home-page .producto {
     background-color: rgb(255, 255, 255);
-    padding: 10px;
+    padding: 15px; 
     border-radius: 5px;
     margin: 15px 0;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.home-page .producto .info_caja {
+    border-top: 1px solid #ebebeb; 
+    padding: 15px; 
 }
 
 .home-page .inf_producto {
@@ -175,16 +159,10 @@
 .home-page .icono-envio i {
     font-size: 20px;
     color: #28a745;
-
-
-
-
-
-
-
 }
 
 /* Footer */
+
 .home-page footer {
     background-color: white !important;
     padding: 20px;
@@ -225,19 +203,55 @@
     text-align: center;
 }
 
-
-@media (max-width: 768px) {
-    .home-page footer {
-        flex-direction: column;
-        text-align: left;
-    }
-}
-
 .home-page main {
     background-color: #ebebeb;
 }
 
-*{
-    margin: 0rem;
+@media (min-width: 768px) {
+    .home-page .producto {
+        width: 45%; 
+        margin: 15px auto; 
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+
+    .home-page article {
+        flex-direction: row; 
+        justify-content: space-between; 
+    }
+
+    .home-page .navbar {
+        display: block; 
+    }
+
+    .home-page .burger_menu i {
+        display: none; 
+    }
 }
 
+@media (min-width: 1024px) {
+    .home-page .producto {
+        width: 30%; 
+        margin: 15px auto;
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+
+    .home-page article {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+
+@media (max-width: 767px) {
+    .home-page .articule_name {
+        display: none; 
+    }
+
+    .home-page .navbar {
+        display: none; 
+    }
+    
+    .home-page .burger_menu i {
+        display: block; 
+    }
+}
