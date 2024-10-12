@@ -1,0 +1,5 @@
+/* styles.css - Importamos todas las hojas de estilo individuales */
+
+@import url('home.css');
+@import url('register.css');
+@import url('login.css');
