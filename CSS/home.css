@@ -13,7 +13,7 @@
 
 .home-page header {
     background-color: #eac926;
-    height: 18rem;
+    height: 21rem;
 }
 
 .home-page .logo_header {
@@ -54,6 +54,10 @@
     width: 1.38rem;
 }
 
+.separacion_nav{
+    margin-bottom: 1rem;
+}
+
 .home-page .navbar a {
     color: black;
     text-decoration: none;
@@ -73,6 +77,8 @@
     color:#666;
 }
 
+
+
 /* Main */
 .home-page .main_banner {
     display: block;
@@ -90,36 +96,40 @@
 }
 
 .home-page article img {
-    margin: 15px 0;
+    margin: 0; 
     max-width: 100%;
     height: auto;
 }
 
+.home-page .producto {
+    background-color: rgb(255, 255, 255);
+    padding: 0; 
+    margin: 15px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: relative; 
+}
+
+.home-page .producto .info_caja {
+    border-top: 2px solid #ebebeb; 
+    padding: 15px; 
+    position: relative; 
+    margin-top: -1px; 
+}
+
 .home-page .precio {
     font-size: 18px;
+    width: 30% !important;
 }
 
 .home-page .descuento {
     font-size: 16px;
     color: green;
+    width: 70% !important;
 }
 
 .home-page .articule_name {
     font-size: 16px;
     color: #666;
-}
-
-.home-page .producto {
-    background-color: rgb(255, 255, 255);
-    padding: 15px; 
-    border-radius: 5px;
-    margin: 15px 0;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-.home-page .producto .info_caja {
-    border-top: 1px solid #ebebeb; 
-    padding: 15px; 
 }
 
 .home-page .inf_producto {
@@ -128,13 +138,12 @@
 }
 
 .home-page .inf_producto p, .inf_producto span {
-    display: block;
     margin: 0.1rem;
 }
 
 .home-page .inf_producto p {
     margin-bottom: 5px;
-    margin-top: 1.5rem;
+    margin-top: 1rem;
 }
 
 .home-page .inf_producto h4 {
@@ -143,12 +152,14 @@
 }
 
 .home-page .icono-envio {
+    position: absolute; 
+    top: -15px; 
+    right: 20px; 
     display: inline-block;
     width: 40px;
     height: 40px;
     border: 2px solid #28a745;
     border-radius: 50%;
-    margin-right: 10px;
     vertical-align: middle;
     display: flex;
     align-items: center;
@@ -241,10 +252,9 @@
     }
 }
 
-
 @media (max-width: 767px) {
     .home-page .articule_name {
-        display: none; 
+        display: none;
     }
 
     .home-page .navbar {
