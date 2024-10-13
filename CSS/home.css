@@ -77,8 +77,6 @@
     color:#666;
 }
 
-
-
 /* Main */
 .home-page .main_banner {
     display: block;
@@ -87,18 +85,32 @@
     height: auto;
 }
 
+.home-page .productos_contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; /* Distribuir el espacio equitativamente */
+    margin: 0 auto;
+    padding: 0;
+}
+
+/* Estilo de los artículos */
 .home-page article {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 10px;
     text-align: center;
+    flex-grow: 1; /* Permite que los artículos crezcan */
+    width: calc(25% - 40px); /* Ajuste de ancho */
+    box-sizing: border-box; /* Asegura que el padding y borde se incluyan en el ancho */
 }
 
+/* Imágenes */
 .home-page article img {
     margin: 0; 
-    max-width: 100%;
+    max-width: 100%; /* Asegúrate de que la imagen no exceda el ancho del artículo */
     height: auto;
+    object-fit: cover; /* Asegura que la imagen se ajuste bien sin deformarse */
 }
 
 .home-page .producto {
@@ -107,6 +119,7 @@
     margin: 15px 0;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     position: relative; 
+    flex-grow: 1; /* Permite que el producto crezca en espacio disponible */
 }
 
 .home-page .producto .info_caja {
@@ -116,15 +129,14 @@
     margin-top: -1px; 
 }
 
-.home-page .precio {
-    font-size: 18px;
-    width: 30% !important;
+.home-page .precio, 
+.home-page .descuento {
+    font-size: 16px; /* Unificación de la fuente */
+    width: auto; /* Permitir que el ancho se ajuste automáticamente */
 }
 
 .home-page .descuento {
-    font-size: 16px;
     color: green;
-    width: 70% !important;
 }
 
 .home-page .articule_name {
@@ -137,7 +149,8 @@
     height: 100%;
 }
 
-.home-page .inf_producto p, .inf_producto span {
+.home-page .inf_producto p, 
+.inf_producto span {
     margin: 0.1rem;
 }
 
@@ -171,6 +184,99 @@
     font-size: 20px;
     color: #28a745;
 }
+
+/* Estilo adicional para pantallas pequeñas */
+@media (max-width: 768px) {
+    .home-page article {
+        width: calc(50% - 20px); /* Dos artículos por fila en pantallas más pequeñas */
+    }
+}
+
+@media (max-width: 480px) {
+    .home-page article {
+        width: 100%; /* Un artículo por fila en pantallas muy pequeñas */
+    }
+}
+
+
+
+
+
+
+
+
+
+.home-page .productos_contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; /* Distribuir el espacio equitativamente */
+    margin: 0 auto;
+    padding: 0;
+}
+
+/* Ajustes de los artículos para que ocupen más espacio */
+.home-page article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+    text-align: center;
+    width: calc(25% - 40px); /* Ajuste de ancho */
+    flex-grow: 1; /* Permite que los artículos crezcan según el espacio disponible */
+    box-sizing: border-box;
+}
+
+/* Asegurar que las imágenes ocupen el máximo espacio */
+.home-page article img {
+    width: 100%;
+    height: auto;
+    object-fit: cover; /* Asegura que la imagen se ajuste bien sin deformarse */
+}
+
+/* Estilo para pantallas medianas (tablets) */
+@media (max-width: 768px) {
+    .home-page article {
+        width: calc(50% - 20px); /* Dos artículos por fila en tablets */
+    }
+}
+
+/* Estilo para pantallas pequeñas (móviles) */
+@media (max-width: 480px) {
+    .home-page article {
+        width: 100%; /* Un artículo por fila en móviles */
+    }
+}
+
+/* Estilo para pantallas grandes (desktops) */
+@media (min-width: 1024px) {
+    .home-page .productos_contenedor {
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    .home-page article {
+        width: calc(23% - 20px); /* Ajuste de ancho para garantizar 4 artículos por fila */
+        margin: 1%;
+        box-sizing: border-box;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* Footer */
 
@@ -265,3 +371,6 @@
         display: block; 
     }
 }
+
+
+
