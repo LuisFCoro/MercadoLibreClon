@@ -2,93 +2,213 @@
 
 .home-page body {
     margin: 0;
+    overflow: hidden;
 }
 
 .home-page * {
     font-family: 'Roboto', sans-serif;
     margin: 0;
+
 }
 
 /* Header */
 
+
+/* Estilos para el header */
 .home-page header {
-    background-color: #eac926;
-    height: 21rem;
+    background-color: #EAC926;
+    height: 10rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap; 
+    width: auto;
 }
 
+/* Estilos para el logo */
 .home-page .logo_header {
-    width: 150px;
-    height: 160px;
-    padding: 10px;
-    margin-left: 21px;
-    margin-top: -40px;
-    margin-bottom: -40px;
+    width: 12rem;
+    margin: 30px 40px 10px 20px;
 }
 
+/* Estilos para el formulario de búsqueda */
+.home-page form {
+    display: flex; 
+    flex-grow: 1; 
+    margin: 1rem 20px; 
+}
+
+/* Estilos para el input de búsqueda */
 .home-page form input[type="search"] {
-    width: 15rem;
-    margin-left: 21px;
+    padding: 10px; 
+    border: 1px solid #ccc; 
+    border-radius: 5px 0 0 5px;
+    flex-grow: 1; 
+    height: 2.5rem;
+    margin-left: 0rem;
+}
+.home-page .cont-form{
+    flex-grow: 1; 
+    max-width: 1900px; 
+
 }
 
+
+/* Estilos para el botón de búsqueda */
 .home-page form button {
-    margin-left: 21px;
+    background-color: #f0f0f0; 
+    padding: 10px; 
+    border: 1px solid #ccc;
+    border-left: none; 
+    border-radius: 0 5px 5px 0; 
+    cursor: pointer; 
+    height: 2.5rem;
 }
 
+/* Estilos del ícono dentro del botón de búsqueda */
+.home-page form button i {
+    color: #888; 
+    font-size: 20px;
+}
+
+/* Efecto hover en el ícono */
+.home-page form button:hover i {
+    color: #3483fa; 
+}
+
+/* Estilos para el texto debajo de la búsqueda */
 .home-page .header_titulo {
-    text-align: center;
-    font-size: 0.69rem;
-    margin-left: 0.5rem;
-    margin-top: 1rem;
+    font-size: 0.6rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+/* Estilos para el nav */
+.home-page .navbar {
+    width: 100%; 
+    display: flex;
+    justify-content: space-between; 
+    margin-top: 0.5rem; 
     margin-bottom: 1rem;
 }
 
-.home-page .burger_menu i {
-    font-size: 24px;
-    background-color: #2365c9;
-    margin-left: 8rem;
-    margin-top: 2.5rem;
-    padding: 0.9rem;
-    color: white;
-    border-radius: 0.5rem;
-    display: none;
-    width: 1.38rem;
-}
-
-.separacion_nav{
-    margin-bottom: 1rem;
-}
-
-.home-page .navbar a {
-    color: black;
-    text-decoration: none;
-    margin: -40px;
-    font-size: 1rem;
-}
-
+/* Estilos para las listas dentro del nav */
 .home-page .navbar ul {
     list-style: none;
-    margin-left: 0.1rem;
+    padding: 0;
+    margin: 0;
+    display: flex;
 }
 
-.home-page .titulos {
-    font-size: 24px;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    color:#666;
+/* Estilos para cada elemento de la lista */
+.home-page .navbar ul li {
+    margin: 0 15px;
+}
+
+/* Estilos para los enlaces dentro de los items de la lista */
+.home-page .navbar ul li a {
+    text-decoration: none;
+    color: #333;
+    margin-left: 0rem;
+    padding:0;
+}
+
+/* Estilo para hover sobre los enlaces */
+.home-page .navbar ul li a:hover {
+    color: #3483fa;
+}
+
+
+/* Media query para pantallas pequeñas (hasta 480px) */
+@media (max-width: 425px) {
+    .home-page header{
+        height: 15rem;
+    }
+    /* Mostrar la hamburguesa en móviles pequeños */
+    .home-page .hamburger-menu {
+        display: block; 
+        font-size: 1.5rem;
+    }
+
+    /* Ajustar el logo para ser más pequeño y estar al lado del search */
+    .home-page .logo_header {
+        width: 12rem;
+        margin: 0;
+        margin-left: 1rem;
+    }
+    .home-page .header_titulo{
+        font-size: 1rem;
+        display: flex;
+        margin-left: 3rem;
+        margin-top: 1rem;
+    }
+
+    /* Ajustar el input de búsqueda para que sea más pequeño */
+    .home-page form input[type="search"] {
+        padding: 8px;
+        border: 1px solid #ccc;
+        border-radius: 5px 0 0 5px;
+        width: 1rem; /* Fija un tamaño pequeño para que el logo quepa al lado */
+        height: 2.5rem;
+    }
+
+    .home-page .cont-form{
+        width: 13rem;
+    }
+
+    /* Ajustar el botón con el icono de búsqueda */
+    .home-page form button {
+        padding: 8px;
+        background-color: #f0f0f0;
+        border: 1px solid #ccc;
+        border-left: none;
+        border-radius: 0 5px 5px 0;
+        height: 2.5rem;
+        cursor: pointer;
+    }
+
+    /* Alinear logo y search box al mismo nivel */
+    .home-page .logo_search_container {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        width: 100%; /* Asegura que los elementos ocupen todo el ancho */
+    }
+    .burger_menu {
+        background-color: blue; 
+        display: flex; 
+        justify-content: center; 
+        align-items: center; 
+        width: 50px; 
+        height: 50px; 
+        border-radius: 10px; 
+        margin-left: 11.5rem;
+        margin-top: 1rem;
+    }
+    
+    /* Estilo del ícono de la hamburguesa */
+    .burger_menu i {
+        color: white; 
+        font-size: 24px; 
+        transition: transform 0.3s ease; 
+    }
+    
 }
 
 /* Main */
+
 .home-page .main_banner {
     display: block;
-    margin: 20px auto; 
-    width: 90%; 
-    height: auto;
+    margin: 0 auto; 
+    width: 100%; 
+    height: auto; 
+    max-width: 100%; 
 }
 
 .home-page .productos_contenedor {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around; /* Distribuir el espacio equitativamente */
+    justify-content: space-around; 
     margin: 0 auto;
     padding: 0;
 }
@@ -100,17 +220,17 @@
     align-items: center;
     margin: 10px;
     text-align: center;
-    flex-grow: 1; /* Permite que los artículos crezcan */
-    width: calc(25% - 40px); /* Ajuste de ancho */
-    box-sizing: border-box; /* Asegura que el padding y borde se incluyan en el ancho */
+    flex-grow: 1; 
+    width: calc(25% - 40px); 
+    box-sizing: border-box; 
 }
 
 /* Imágenes */
 .home-page article img {
     margin: 0; 
-    max-width: 100%; /* Asegúrate de que la imagen no exceda el ancho del artículo */
+    max-width: 100%; 
     height: auto;
-    object-fit: cover; /* Asegura que la imagen se ajuste bien sin deformarse */
+    object-fit: cover; 
 }
 
 .home-page .producto {
@@ -119,7 +239,7 @@
     margin: 15px 0;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     position: relative; 
-    flex-grow: 1; /* Permite que el producto crezca en espacio disponible */
+    flex-grow: 1; 
 }
 
 .home-page .producto .info_caja {
@@ -131,8 +251,8 @@
 
 .home-page .precio, 
 .home-page .descuento {
-    font-size: 16px; /* Unificación de la fuente */
-    width: auto; /* Permitir que el ancho se ajuste automáticamente */
+    font-size: 16px;
+    width: auto; 
 }
 
 .home-page .descuento {
@@ -188,28 +308,24 @@
 /* Estilo adicional para pantallas pequeñas */
 @media (max-width: 768px) {
     .home-page article {
-        width: calc(50% - 20px); /* Dos artículos por fila en pantallas más pequeñas */
+        width: calc(50% - 20px); 
     }
 }
 
 @media (max-width: 480px) {
     .home-page article {
-        width: 100%; /* Un artículo por fila en pantallas muy pequeñas */
+        width: 100%; 
+    }
+    .home-page .main_banner {
+        display: none;
     }
 }
-
-
-
-
-
-
-
 
 
 .home-page .productos_contenedor {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around; /* Distribuir el espacio equitativamente */
+    justify-content: space-around; 
     margin: 0 auto;
     padding: 0;
 }
@@ -221,8 +337,8 @@
     align-items: center;
     margin: 10px;
     text-align: center;
-    width: calc(25% - 40px); /* Ajuste de ancho */
-    flex-grow: 1; /* Permite que los artículos crezcan según el espacio disponible */
+    width: calc(25% - 40px);
+    flex-grow: 1; 
     box-sizing: border-box;
 }
 
@@ -230,20 +346,25 @@
 .home-page article img {
     width: 100%;
     height: auto;
-    object-fit: cover; /* Asegura que la imagen se ajuste bien sin deformarse */
+    object-fit: cover; 
+}
+
+.home-page .titulos{
+    margin-left:0.5rem;
+    margin-top: 1rem;
 }
 
 /* Estilo para pantallas medianas (tablets) */
 @media (max-width: 768px) {
     .home-page article {
-        width: calc(50% - 20px); /* Dos artículos por fila en tablets */
+        width: calc(50% - 20px);
     }
 }
 
 /* Estilo para pantallas pequeñas (móviles) */
 @media (max-width: 480px) {
     .home-page article {
-        width: 100%; /* Un artículo por fila en móviles */
+        width: 100%; 
     }
 }
 
@@ -255,28 +376,11 @@
     }
 
     .home-page article {
-        width: calc(23% - 20px); /* Ajuste de ancho para garantizar 4 artículos por fila */
+        width: calc(23% - 20px); 
         margin: 1%;
         box-sizing: border-box;
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* Footer */
 
@@ -336,9 +440,6 @@
         justify-content: space-between; 
     }
 
-    .home-page .navbar {
-        display: block; 
-    }
 
     .home-page .burger_menu i {
         display: none; 
