@@ -341,7 +341,6 @@
 /* Estilo general de productos */
 .producto {
     position: relative;
-    width: 200px;
     margin: 20px;
     box-shadow: none; 
     transition: box-shadow 0.3s ease; 
